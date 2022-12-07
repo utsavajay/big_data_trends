@@ -1,0 +1,2852 @@
+{
+  type: 'flow',
+  kind: 'artifact',
+  metadata: {
+    trifactaVersion: '9.6.0+1918341.20221107112344.44304b13',
+    exportedAt: '2022-12-06T19:03:39.995Z',
+    exportedBy: 54205,
+    uuid: 'b1fc8ab0-7598-11ed-96e2-e72030066dfd',
+    comment: "Analyze a selection of stocks' historic performance to identify correlations",
+    primaryFlowIds: [
+      206805,
+    ],
+    edition: 'SaaS',
+    lastMigration: '20220721085341',
+  },
+  data: {
+    artifacts: [],
+    connections: [],
+    flows: [
+      {
+        settings: {
+          optimize: 'default',
+          optimizers: {
+            columnPruning: 'enabled',
+          },
+        },
+        id: 206805,
+        name: 'Stock portfolio analysis',
+        description: "Analyze a selection of stocks' historic performance to identify correlations",
+        defaultOutputDir: null,
+        fromExampleFlowHash: 'kzfVelSTOYr4lKWMR3E8rfiTGypLpNRW',
+        fromExampleFlowName: '(template) Stock portfolio analysis',
+        fromTemplateId: 'C05',
+        flownodes: [
+          {
+            id: 1784205,
+            scriptId: 1639380,
+            flowNodeId: null,
+            wrangled: true,
+            referenceId: null,
+            sampleLoadLimit: null,
+          },
+          {
+            id: 1784206,
+            scriptId: 1639381,
+            flowNodeId: null,
+            wrangled: true,
+            referenceId: null,
+            sampleLoadLimit: null,
+          },
+          {
+            id: 1784207,
+            scriptId: 1639382,
+            flowNodeId: null,
+            wrangled: true,
+            referenceId: null,
+            sampleLoadLimit: null,
+          },
+          {
+            id: 1784208,
+            scriptId: 1639383,
+            flowNodeId: null,
+            wrangled: true,
+            referenceId: null,
+            sampleLoadLimit: null,
+          },
+          {
+            id: 1784209,
+            scriptId: 1639384,
+            flowNodeId: null,
+            wrangled: true,
+            referenceId: null,
+            sampleLoadLimit: null,
+          },
+          {
+            id: 1784210,
+            scriptId: 1639385,
+            flowNodeId: null,
+            wrangled: false,
+            referenceId: null,
+            sampleLoadLimit: null,
+          },
+          {
+            id: 1815439,
+            scriptId: 1667999,
+            flowNodeId: null,
+            wrangled: true,
+            referenceId: null,
+            sampleLoadLimit: null,
+          },
+        ],
+        notes: [
+          {
+            id: 324538,
+            content: "%3Cdiv%3E%E2%98%9D%EF%B8%8FHistorical%20daily%20prices%20are%20loaded%20for%20the%26nbsp%3B%3C%2Fdiv%3E%3Cdiv%3Etop%2010%20US%20stocks%20by%20market%20capitalization.%3Cbr%3E%3Cbr%3E%3C%2Fdiv%3E%3Cdiv%3ETicker%20symbols%20included%3A%3C%2Fdiv%3E%3Cdiv%3E'MSFT'%2C%20'AAPL'%2C%20'AMZN'%2C%20'GOOG'%2C%20'FB'%2C%26nbsp%3B%3C%2Fdiv%3E%3Cdiv%3E'WMT'%2C%20'JNJ'%2C%20'JPM'%2C%20'V'%2C%20'PG'%3Cbr%3E%3C%2Fdiv%3E",
+            flowGraphVertexId: 1465217,
+          },
+          {
+            id: 324539,
+            content: '%F0%9F%91%88%20Add%20an%20output%20and%20run%20to%20%20%0A%26nbsp%3B%3Cdiv%3E%26nbsp%3Bdownload%20and%20see%20the%20results!%20%F0%9F%93%88%3C%2Fdiv%3E',
+            flowGraphVertexId: 1465218,
+          },
+        ],
+        flowgraphvertices: [
+          {
+            id: 1465210,
+            objectType: 'flownode',
+            objectId: 1784205,
+            x: 171,
+            y: -16,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1465211,
+            objectType: 'flownode',
+            objectId: 1784206,
+            x: 310,
+            y: -91,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1465212,
+            objectType: 'flownode',
+            objectId: 1784207,
+            x: 457,
+            y: -20,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1465213,
+            objectType: 'flownode',
+            objectId: 1784208,
+            x: 280,
+            y: 76,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1465214,
+            objectType: 'flownode',
+            objectId: 1784209,
+            x: 571,
+            y: -20,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1465215,
+            objectType: 'flownode',
+            objectId: 1784210,
+            x: -16,
+            y: -21,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1499977,
+            objectType: 'flownode',
+            objectId: 1815439,
+            x: 550,
+            y: -91,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1465219,
+            objectType: 'outputobject',
+            objectId: 207868,
+            x: 811,
+            y: -20,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1465217,
+            objectType: 'note',
+            objectId: 324538,
+            x: -33,
+            y: 74,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1465218,
+            objectType: 'note',
+            objectId: 324539,
+            x: 675,
+            y: 70,
+            width: null,
+            height: null,
+          },
+        ],
+        flowedges: [
+          {
+            id: 1531151,
+            inFlowNodeId: 1784205,
+            inPortId: null,
+            outFlowNodeId: 1784206,
+            outPortId: null,
+          },
+          {
+            id: 1531152,
+            inFlowNodeId: 1784206,
+            inPortId: null,
+            outFlowNodeId: 1784207,
+            outPortId: null,
+          },
+          {
+            id: 1531153,
+            inFlowNodeId: 1784206,
+            inPortId: null,
+            outFlowNodeId: 1784207,
+            outPortId: 1,
+          },
+          {
+            id: 1531154,
+            inFlowNodeId: 1784205,
+            inPortId: null,
+            outFlowNodeId: 1784208,
+            outPortId: null,
+          },
+          {
+            id: 1531155,
+            inFlowNodeId: 1784208,
+            inPortId: null,
+            outFlowNodeId: 1784207,
+            outPortId: 3,
+          },
+          {
+            id: 1531156,
+            inFlowNodeId: 1784205,
+            inPortId: null,
+            outFlowNodeId: 1784207,
+            outPortId: 4,
+          },
+          {
+            id: 1531157,
+            inFlowNodeId: 1784205,
+            inPortId: null,
+            outFlowNodeId: 1784207,
+            outPortId: 6,
+          },
+          {
+            id: 1531158,
+            inFlowNodeId: 1784207,
+            inPortId: null,
+            outFlowNodeId: 1784209,
+            outPortId: null,
+          },
+          {
+            id: 1531159,
+            inFlowNodeId: 1784210,
+            inPortId: null,
+            outFlowNodeId: 1784205,
+            outPortId: null,
+          },
+          {
+            id: 1558822,
+            inFlowNodeId: 1784206,
+            inPortId: null,
+            outFlowNodeId: 1815439,
+            outPortId: null,
+          },
+        ],
+        references: [],
+        flowrunparameteroverrides: [],
+        runparameters: [],
+        recipes: [
+          {
+            id: 1639380,
+            name: 'Stock parse',
+            description: null,
+            active: true,
+            nextPortId: 1,
+            steps: [
+              {
+                columnMetadata: {
+                  Date: {
+                    id: '11cdzom',
+                  },
+                  Close: {
+                    id: 'otfq66',
+                  },
+                  TRIFACTA__FILE_LINEAGE_INFO: {
+                    id: '-t1f2h9',
+                  },
+                },
+                task: {
+                  annotations: {
+                    hidden: true,
+                  },
+                  kind: 'task',
+                  type: 'Load',
+                  parameters: {
+                    format: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'FormatBlob',
+                      parameters: {},
+                    },
+                    location: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'portId://null',
+                    },
+                    enableLineage: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: true,
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'column1',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: 'original_datasource_199295',
+                },
+                tableData: null,
+                portId: null,
+                id: 8287803,
+                hash: 'ad5e3595e6c8ea994ba40e0a42fbfba958d5f45f',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Comment',
+                  parameters: {
+                    comment: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'The filename contains the ticker symbol. Add the filename and extract the ticker symbol from it',
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287804,
+                hash: '34f8e1a5256922bbbb6cf66a6d61b205e519309a',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {
+                  filepath: {
+                    id: '-4eauagx',
+                  },
+                },
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      filepath: {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'Derive',
+                  parameters: {
+                    type: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'single',
+                    },
+                    value: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'FilePath',
+                      parameters: {},
+                    },
+                    as: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'filepath',
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287805,
+                hash: '5d06c09480cd2646861b0ba61d7830ce74fe4761',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {
+                  filepath1: {
+                    id: '1198req',
+                  },
+                },
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      filepath1: {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'ExtractPatterns',
+                  parameters: {
+                    col: {
+                      kind: 'column',
+                      type: 'Column',
+                      value: 'filepath',
+                      relation: null,
+                    },
+                    type: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'custom',
+                    },
+                    on: {
+                      kind: 'constant',
+                      type: 'Pattern',
+                      value: '{upper}+',
+                    },
+                    start: {
+                      kind: 'constant',
+                      type: 'Pattern',
+                      value: '{delim}',
+                    },
+                    end: {
+                      kind: 'constant',
+                      type: 'Pattern',
+                      value: '.csv',
+                    },
+                    ignoreCase: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: false,
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'filepath1',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287806,
+                hash: '6cce0f02c47a9751ff3b6f3f8de3e51b3e72a64c',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Rename',
+                  parameters: {
+                    type: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'manual',
+                    },
+                    mapping: {
+                      kind: 'matrix',
+                      type: 'Matrix',
+                      value: [
+                        {
+                          kind: 'array',
+                          type: 'Array',
+                          value: [
+                            {
+                              kind: 'column',
+                              type: 'Column',
+                              value: 'filepath1',
+                              relation: null,
+                            },
+                            {
+                              kind: 'constant',
+                              type: 'String',
+                              value: 'ticker',
+                            },
+                          ],
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287807,
+                hash: '2474c21abbcc6c093afd90efe879976e66df6a84',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Drop',
+                  parameters: {
+                    action: {
+                      kind: 'enumerable',
+                      type: 'Enumerable',
+                      value: 'Drop',
+                    },
+                    col: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'filepath',
+                          relation: null,
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287808,
+                hash: '465e27d1a6f63e7418985a5781ceadd5f50fc457',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Rename',
+                  parameters: {
+                    type: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'lower',
+                    },
+                    col: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Wildcard',
+                          value: '*',
+                          annotations: {
+                            includeLineage: false,
+                            includeFileLineage: false,
+                          },
+                          relation: null,
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287809,
+                hash: '49adce27db1c25aee8aaef0057481047ca73c43c',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+            ],
+            dqScriptRules: [],
+          },
+          {
+            id: 1639381,
+            name: 'tickers',
+            description: null,
+            active: true,
+            nextPortId: 1,
+            steps: [
+              {
+                columnMetadata: {
+                  ticker: {
+                    id: '46psa77',
+                  },
+                  date: {
+                    id: '5aniqf3',
+                  },
+                  close: {
+                    id: '52w0g53',
+                  },
+                  TRIFACTA__FILE_LINEAGE_INFO: {
+                    id: '9owgnnw',
+                  },
+                },
+                task: {
+                  annotations: {
+                    hidden: true,
+                  },
+                  kind: 'task',
+                  type: 'Load',
+                  parameters: {
+                    format: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'FormatBlob',
+                      parameters: {},
+                    },
+                    location: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'portId://null',
+                    },
+                    enableLineage: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: true,
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'column1',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: 'original_datasource_399223',
+                },
+                tableData: null,
+                portId: null,
+                id: 8287810,
+                hash: 'f807bf6d465be6e0e01f75e2573af1a0bac0867e',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Comment',
+                  parameters: {
+                    comment: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'Create a list of unique ticker symbols',
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287811,
+                hash: '49aa428556ee0e1b9e0686b99ccbeb8fa1635f35',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Drop',
+                  parameters: {
+                    action: {
+                      kind: 'enumerable',
+                      type: 'Enumerable',
+                      value: 'Keep',
+                    },
+                    col: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'ticker',
+                          relation: null,
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287812,
+                hash: '54d923e2d445d5778ed2d9725b3bfb3d9c516e80',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {
+                  ticker: {
+                    id: '-9eiioe',
+                  },
+                },
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Deduplicate',
+                  parameters: {},
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287813,
+                hash: 'f20008c0dd958d0fcbc54086deb209f539c6342b',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+            ],
+            dqScriptRules: [],
+          },
+          {
+            id: 1639382,
+            name: 'combinations',
+            description: null,
+            active: true,
+            nextPortId: 7,
+            steps: [
+              {
+                columnMetadata: {
+                  ticker: {
+                    id: '7k5eqo1',
+                  },
+                },
+                task: {
+                  annotations: {
+                    hidden: true,
+                  },
+                  kind: 'task',
+                  type: 'Load',
+                  parameters: {
+                    format: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'FormatBlob',
+                      parameters: {},
+                    },
+                    location: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'portId://null',
+                    },
+                    enableLineage: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: true,
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'column1',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: 'original_datasource_399230',
+                },
+                tableData: null,
+                portId: null,
+                id: 8287814,
+                hash: 'd190786ee99249e7e0561210cdbf8a5f989a9a82',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Comment',
+                  parameters: {
+                    comment: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'Generate every permutation of ticker pairs by cross-joining the ticker list to itself',
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287815,
+                hash: '81242eb097c2ba7e9fbfa2c4cf4fd2bb3f5337dc',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {
+                    hidden: true,
+                  },
+                  kind: 'task',
+                  type: 'Load',
+                  parameters: {
+                    location: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'portId://1',
+                    },
+                    format: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'FormatBlob',
+                      parameters: {},
+                    },
+                  },
+                  outputName: 'table_65e1776158090fcbb2490948b849757b8f457c9e',
+                },
+                tableData: null,
+                portId: 1,
+                id: 8287816,
+                hash: '9f0108eaa927a2fee8789bd539b695a1b9988ddd',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      ticker: {
+                        type: [
+                          'String',
+                        ],
+                      },
+                      ticker1: {
+                        type: [
+                          'String',
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'Join',
+                  parameters: {
+                    type: {
+                      kind: 'enumerable',
+                      type: 'Enumerable',
+                      value: 'inner',
+                    },
+                    col: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'ticker',
+                          relation: 'table_2da4dcadbd46f99e509a256f084f65811c056ba1',
+                          as: [
+                            'ticker',
+                          ],
+                        },
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'ticker',
+                          relation: 'table_65e1776158090fcbb2490948b849757b8f457c9e',
+                          as: [
+                            'ticker1',
+                          ],
+                        },
+                      ],
+                    },
+                    with: {
+                      kind: 'table',
+                      type: 'Table',
+                      value: 'table_65e1776158090fcbb2490948b849757b8f457c9e',
+                    },
+                    table: {
+                      kind: 'table',
+                      type: 'Table',
+                      value: 'table_2da4dcadbd46f99e509a256f084f65811c056ba1',
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'ticker',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'ticker1',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287817,
+                hash: '0c6f5751aa89e5c7b33ddd237926f543b3df7db7',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Comment',
+                  parameters: {
+                    comment: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'Filter the permutations to only keep unique combinations',
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287818,
+                hash: '895241a53e05e008fbe98ba52f7bf468d2731844',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Filter',
+                  parameters: {
+                    action: {
+                      kind: 'enumerable',
+                      type: 'Enumerable',
+                      value: 'Keep',
+                    },
+                    type: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'custom',
+                    },
+                    rowType: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'single',
+                    },
+                    row: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'StringLessThan',
+                      parameters: {
+                        ignore_case: {
+                          kind: 'constant',
+                          type: 'Bool',
+                          value: true,
+                        },
+                        lhs: {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'ticker',
+                          relation: null,
+                        },
+                        rhs: {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'ticker1',
+                          relation: null,
+                        },
+                      },
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287819,
+                hash: '3b6bbfcb16ff64d9346213a6a1e518e87960e649',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {
+                  date: {
+                    id: '1ffajm1',
+                  },
+                },
+                task: {
+                  annotations: {
+                    hidden: true,
+                  },
+                  kind: 'task',
+                  type: 'Load',
+                  parameters: {
+                    location: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'portId://3',
+                    },
+                    format: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'FormatBlob',
+                      parameters: {},
+                    },
+                  },
+                  outputName: 'table_93135653941af03c7475c1bca3491e65a7fc6dce',
+                },
+                tableData: null,
+                portId: 3,
+                id: 8287820,
+                hash: '3eacb2d0eebcd3f348ab7f43f9e0418ad33b5f74',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      ticker: {
+                        type: [
+                          'String',
+                        ],
+                      },
+                      ticker1: {
+                        type: [
+                          'String',
+                        ],
+                      },
+                      date: {
+                        type: [
+                          'Datetime',
+                          'yy-mm-dd',
+                          'yyyy*mm*dd',
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'Join',
+                  parameters: {
+                    type: {
+                      kind: 'enumerable',
+                      type: 'Enumerable',
+                      value: 'inner',
+                    },
+                    col: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'ticker',
+                          relation: 'table_fd499f38a1124cc0be99142231874a45bbdf9e5f',
+                          as: [
+                            'ticker',
+                          ],
+                        },
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'ticker1',
+                          relation: 'table_fd499f38a1124cc0be99142231874a45bbdf9e5f',
+                          as: [
+                            'ticker1',
+                          ],
+                        },
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'date',
+                          relation: 'table_93135653941af03c7475c1bca3491e65a7fc6dce',
+                          as: [
+                            'date',
+                          ],
+                        },
+                      ],
+                    },
+                    with: {
+                      kind: 'table',
+                      type: 'Table',
+                      value: 'table_93135653941af03c7475c1bca3491e65a7fc6dce',
+                    },
+                    table: {
+                      kind: 'table',
+                      type: 'Table',
+                      value: 'table_fd499f38a1124cc0be99142231874a45bbdf9e5f',
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'ticker',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'ticker1',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'date',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287821,
+                hash: 'b284700fd9ad63ed0fd2a75a7fe20542db542958',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Comment',
+                  parameters: {
+                    comment: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'Switch to sample all_tickers_and_dates',
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287822,
+                hash: '017dccb219654e75574a9847dbe0e49f617b7c88',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Rename',
+                  parameters: {
+                    type: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'manual',
+                    },
+                    mapping: {
+                      kind: 'matrix',
+                      type: 'Matrix',
+                      value: [
+                        {
+                          kind: 'array',
+                          type: 'Array',
+                          value: [
+                            {
+                              kind: 'column',
+                              type: 'Column',
+                              value: 'ticker',
+                              relation: null,
+                            },
+                            {
+                              kind: 'constant',
+                              type: 'String',
+                              value: 'left',
+                            },
+                          ],
+                        },
+                        {
+                          kind: 'array',
+                          type: 'Array',
+                          value: [
+                            {
+                              kind: 'column',
+                              type: 'Column',
+                              value: 'ticker1',
+                              relation: null,
+                            },
+                            {
+                              kind: 'constant',
+                              type: 'String',
+                              value: 'right',
+                            },
+                          ],
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287823,
+                hash: 'dd345afaf139ec288c752c0ee1cff6e52511bc3d',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {
+                    hidden: true,
+                  },
+                  kind: 'task',
+                  type: 'Load',
+                  parameters: {
+                    location: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'portId://4',
+                    },
+                    format: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'FormatBlob',
+                      parameters: {},
+                    },
+                  },
+                  outputName: 'table_609be52682eae42811c81a302b9f5445d3b37530',
+                },
+                tableData: null,
+                portId: 4,
+                id: 8287824,
+                hash: '96c2c55cc26f00a1c733b854de9763f700b6e965',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {
+                  left_close: {
+                    id: '-h9vvdwh',
+                  },
+                },
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      date: {
+                        type: [
+                          'Datetime',
+                          'yy-mm-dd',
+                          'yyyy*mm*dd',
+                        ],
+                      },
+                      left: {
+                        type: [
+                          'String',
+                        ],
+                      },
+                      right: {
+                        type: [
+                          'String',
+                        ],
+                      },
+                      left_close: {
+                        type: [
+                          'Float',
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'Join',
+                  parameters: {
+                    type: {
+                      kind: 'enumerable',
+                      type: 'Enumerable',
+                      value: 'inner',
+                    },
+                    col: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'date',
+                          relation: 'table_80c3f6c8b8b6b114157f26aaef9de7d5b4b7c5a5',
+                          as: [
+                            'date',
+                          ],
+                        },
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'left',
+                          relation: 'table_80c3f6c8b8b6b114157f26aaef9de7d5b4b7c5a5',
+                          as: [
+                            'left',
+                          ],
+                        },
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'right',
+                          relation: 'table_80c3f6c8b8b6b114157f26aaef9de7d5b4b7c5a5',
+                          as: [
+                            'right',
+                          ],
+                        },
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'close',
+                          relation: 'table_609be52682eae42811c81a302b9f5445d3b37530',
+                          as: [
+                            'left_close',
+                          ],
+                        },
+                      ],
+                    },
+                    with: {
+                      kind: 'table',
+                      type: 'Table',
+                      value: 'table_609be52682eae42811c81a302b9f5445d3b37530',
+                    },
+                    table: {
+                      kind: 'table',
+                      type: 'Table',
+                      value: 'table_80c3f6c8b8b6b114157f26aaef9de7d5b4b7c5a5',
+                    },
+                    row: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'And',
+                      parameters: {
+                        lhs: {
+                          annotations: {},
+                          kind: 'func',
+                          type: 'Equal',
+                          parameters: {
+                            lhs: {
+                              kind: 'column',
+                              type: 'Column',
+                              value: 'date',
+                              relation: 'table_80c3f6c8b8b6b114157f26aaef9de7d5b4b7c5a5',
+                            },
+                            rhs: {
+                              kind: 'column',
+                              type: 'Column',
+                              value: 'date',
+                              relation: 'table_609be52682eae42811c81a302b9f5445d3b37530',
+                            },
+                          },
+                        },
+                        rhs: {
+                          annotations: {},
+                          kind: 'func',
+                          type: 'Equal',
+                          parameters: {
+                            lhs: {
+                              kind: 'column',
+                              type: 'Column',
+                              value: 'left',
+                              relation: 'table_80c3f6c8b8b6b114157f26aaef9de7d5b4b7c5a5',
+                            },
+                            rhs: {
+                              kind: 'column',
+                              type: 'Column',
+                              value: 'ticker',
+                              relation: 'table_609be52682eae42811c81a302b9f5445d3b37530',
+                            },
+                          },
+                        },
+                      },
+                    },
+                    prefix: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: '',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'left_',
+                        },
+                      ],
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'date',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'left',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'right',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'left_close',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287825,
+                hash: '1dee280a6008ef8073cccfef4cc65ee237cb8f2a',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {
+                    hidden: true,
+                  },
+                  kind: 'task',
+                  type: 'Load',
+                  parameters: {
+                    location: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'portId://6',
+                    },
+                    format: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'FormatBlob',
+                      parameters: {},
+                    },
+                  },
+                  outputName: 'table_f93c6b421a361cd21be007abb7417c6cf490e7b0',
+                },
+                tableData: null,
+                portId: 6,
+                id: 8287826,
+                hash: '3fc14b1ec7e982cfda315520105931a5837b565a',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {
+                  right_close: {
+                    id: '3ds80y6',
+                  },
+                },
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      date: {
+                        type: [
+                          'Datetime',
+                          'yy-mm-dd',
+                          'yyyy*mm*dd',
+                        ],
+                      },
+                      right: {
+                        type: [
+                          'String',
+                        ],
+                      },
+                      left: {
+                        type: [
+                          'String',
+                        ],
+                      },
+                      left_close: {
+                        type: [
+                          'Float',
+                        ],
+                      },
+                      right_close: {
+                        type: [
+                          'Float',
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'Join',
+                  parameters: {
+                    type: {
+                      kind: 'enumerable',
+                      type: 'Enumerable',
+                      value: 'inner',
+                    },
+                    col: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'date',
+                          relation: 'table_8ba827a48194c5230141a6223db9890460039af3',
+                          as: [
+                            'date',
+                          ],
+                        },
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'right',
+                          relation: 'table_8ba827a48194c5230141a6223db9890460039af3',
+                          as: [
+                            'right',
+                          ],
+                        },
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'left',
+                          relation: 'table_8ba827a48194c5230141a6223db9890460039af3',
+                          as: [
+                            'left',
+                          ],
+                        },
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'left_close',
+                          relation: 'table_8ba827a48194c5230141a6223db9890460039af3',
+                          as: [
+                            'left_close',
+                          ],
+                        },
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'close',
+                          relation: 'table_f93c6b421a361cd21be007abb7417c6cf490e7b0',
+                          as: [
+                            'right_close',
+                          ],
+                        },
+                      ],
+                    },
+                    with: {
+                      kind: 'table',
+                      type: 'Table',
+                      value: 'table_f93c6b421a361cd21be007abb7417c6cf490e7b0',
+                    },
+                    table: {
+                      kind: 'table',
+                      type: 'Table',
+                      value: 'table_8ba827a48194c5230141a6223db9890460039af3',
+                    },
+                    row: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'And',
+                      parameters: {
+                        lhs: {
+                          annotations: {},
+                          kind: 'func',
+                          type: 'Equal',
+                          parameters: {
+                            lhs: {
+                              kind: 'column',
+                              type: 'Column',
+                              value: 'date',
+                              relation: 'table_8ba827a48194c5230141a6223db9890460039af3',
+                            },
+                            rhs: {
+                              kind: 'column',
+                              type: 'Column',
+                              value: 'date',
+                              relation: 'table_f93c6b421a361cd21be007abb7417c6cf490e7b0',
+                            },
+                          },
+                        },
+                        rhs: {
+                          annotations: {},
+                          kind: 'func',
+                          type: 'Equal',
+                          parameters: {
+                            lhs: {
+                              kind: 'column',
+                              type: 'Column',
+                              value: 'right',
+                              relation: 'table_8ba827a48194c5230141a6223db9890460039af3',
+                            },
+                            rhs: {
+                              kind: 'column',
+                              type: 'Column',
+                              value: 'ticker',
+                              relation: 'table_f93c6b421a361cd21be007abb7417c6cf490e7b0',
+                            },
+                          },
+                        },
+                      },
+                    },
+                    prefix: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: '',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'right_',
+                        },
+                      ],
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'date',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'right',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'left',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'left_close',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'right_close',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287827,
+                hash: '957824256977d723035676a3cad69dbc898388e7',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Move',
+                  parameters: {
+                    col: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'left',
+                          relation: null,
+                        },
+                      ],
+                    },
+                    position: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'before',
+                    },
+                    before: {
+                      kind: 'column',
+                      type: 'Column',
+                      value: 'right',
+                      relation: null,
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287828,
+                hash: '9d57ed134e7d12ef8487e9eadd673d650c81a3b3',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+            ],
+            dqScriptRules: [],
+          },
+          {
+            id: 1639383,
+            name: 'dates',
+            description: null,
+            active: true,
+            nextPortId: 1,
+            steps: [
+              {
+                columnMetadata: {
+                  ticker: {
+                    id: '46psa77',
+                  },
+                  date: {
+                    id: '5aniqf3',
+                  },
+                  close: {
+                    id: '52w0g53',
+                  },
+                  TRIFACTA__FILE_LINEAGE_INFO: {
+                    id: '9owgnnw',
+                  },
+                },
+                task: {
+                  annotations: {
+                    hidden: true,
+                  },
+                  kind: 'task',
+                  type: 'Load',
+                  parameters: {
+                    format: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'FormatBlob',
+                      parameters: {},
+                    },
+                    location: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'portId://null',
+                    },
+                    enableLineage: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: true,
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'column1',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: 'original_datasource_399223',
+                },
+                tableData: null,
+                portId: null,
+                id: 8287829,
+                hash: 'f807bf6d465be6e0e01f75e2573af1a0bac0867e',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Drop',
+                  parameters: {
+                    action: {
+                      kind: 'enumerable',
+                      type: 'Enumerable',
+                      value: 'Keep',
+                    },
+                    col: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'date',
+                          relation: null,
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287830,
+                hash: 'd5b07dfadc63e23c60da72b421c3ea396ba3363e',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {
+                  date: {
+                    id: '1qgvbzl',
+                  },
+                },
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Deduplicate',
+                  parameters: {},
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287831,
+                hash: 'f20008c0dd958d0fcbc54086deb209f539c6342b',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Sort',
+                  parameters: {
+                    order: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'date',
+                          relation: null,
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287832,
+                hash: 'a2f781118a46c156810334a279d0f3fd3924aed8',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+            ],
+            dqScriptRules: [],
+          },
+          {
+            id: 1639384,
+            name: 'correlation',
+            description: null,
+            active: true,
+            nextPortId: 1,
+            steps: [
+              {
+                columnMetadata: {
+                  date: {
+                    id: '-1w2vr0i',
+                  },
+                  left: {
+                    id: '-1w2pi5x',
+                  },
+                  right: {
+                    id: '-18ekc9u',
+                  },
+                  left_close: {
+                    id: '-1zhijgg',
+                  },
+                  right_close: {
+                    id: '-q1wrl9',
+                  },
+                },
+                task: {
+                  annotations: {
+                    hidden: true,
+                  },
+                  kind: 'task',
+                  type: 'Load',
+                  parameters: {
+                    format: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'FormatBlob',
+                      parameters: {},
+                    },
+                    location: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'portId://null',
+                    },
+                    enableLineage: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: true,
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'column1',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: 'original_datasource_399231',
+                },
+                tableData: null,
+                portId: null,
+                id: 8287833,
+                hash: '345ff7c992302f64e49cb43869b906eb4663998b',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Comment',
+                  parameters: {
+                    comment: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'Calculate correlation coefficient between ticker pairs',
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287834,
+                hash: 'b770a56148d395b853f3b58730b54ed4dfeee972',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {
+                  correlation: {
+                    id: '-4o5iwv1',
+                  },
+                },
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      correlation: {
+                        type: [
+                          'Float',
+                        ],
+                        _likely_types: [
+                          [
+                            'Float',
+                          ],
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'Derive',
+                  parameters: {
+                    type: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'multiple',
+                    },
+                    value: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'Correl',
+                      parameters: {
+                        col: {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'left_close',
+                          relation: null,
+                        },
+                        other: {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'right_close',
+                          relation: null,
+                        },
+                      },
+                    },
+                    group: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'left',
+                          relation: null,
+                        },
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'right',
+                          relation: null,
+                        },
+                      ],
+                    },
+                    as: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'correlation',
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287835,
+                hash: 'b77737306b3e27c215b34a4d8fde7bceaab5a5b8',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {
+                  any_correlation: {
+                    id: '48hu5al',
+                  },
+                },
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      any_correlation: {
+                        type: [
+                          'Float',
+                        ],
+                        _likely_types: [
+                          [
+                            'Float',
+                          ],
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'Pivot',
+                  parameters: {
+                    limit: {
+                      kind: 'constant',
+                      type: 'Integer',
+                      value: 50,
+                    },
+                    group: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'left',
+                          relation: null,
+                        },
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'right',
+                          relation: null,
+                        },
+                      ],
+                    },
+                    value: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          annotations: {},
+                          kind: 'func',
+                          type: 'Any',
+                          parameters: {
+                            col: {
+                              kind: 'column',
+                              type: 'Column',
+                              value: 'correlation',
+                              relation: null,
+                            },
+                          },
+                          as: [
+                            'any_correlation',
+                          ],
+                        },
+                      ],
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'any_correlation',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287836,
+                hash: '5e5ec1c632f2cbe8066f6c4141c49bb101a9c3f5',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Sort',
+                  parameters: {
+                    order: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          annotations: {},
+                          kind: 'func',
+                          type: 'Negate',
+                          parameters: {
+                            operand: {
+                              kind: 'column',
+                              type: 'Column',
+                              value: 'any_correlation',
+                              relation: null,
+                            },
+                          },
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287837,
+                hash: '7f82fb7aa41dbba505bc3e622b85555618910ed9',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+            ],
+            dqScriptRules: [],
+          },
+          {
+            id: 1639385,
+            name: 'Stock prices',
+            description: null,
+            active: true,
+            nextPortId: 1,
+            steps: [
+              {
+                columnMetadata: null,
+                task: {
+                  annotations: {
+                    hidden: true,
+                  },
+                  kind: 'task',
+                  type: 'Load',
+                  parameters: {
+                    format: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'FormatBlob',
+                      parameters: {},
+                    },
+                    location: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'id://1024373',
+                    },
+                    enableLineage: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: true,
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'column1',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: 'original_datasource_270040',
+                },
+                tableData: null,
+                portId: null,
+                id: 8287838,
+                hash: 'b2a66c14b1cc4372af1922b3ef4b519181af2356',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: null,
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      column1: {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'SplitRows',
+                  parameters: {
+                    on: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: '\n',
+                    },
+                    col: {
+                      kind: 'column',
+                      type: 'Column',
+                      value: 'column1',
+                      relation: null,
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287839,
+                hash: '78fae58ffc390e6c061a056bb0a4ec0317c9f8f6',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: null,
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      column2: {
+                        type: [
+                          'Datetime',
+                          'yy-mm-dd',
+                          'yyyy*mm*dd',
+                        ],
+                        _likely_types: [
+                          [
+                            'Datetime',
+                            'yy-mm-dd',
+                            'yyyy*mm*dd',
+                          ],
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                        ],
+                      },
+                      column3: {
+                        type: [
+                          'Float',
+                        ],
+                        _likely_types: [
+                          [
+                            'Float',
+                          ],
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'Split',
+                  parameters: {
+                    col: {
+                      kind: 'column',
+                      type: 'Column',
+                      value: 'column1',
+                      relation: null,
+                    },
+                    type: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'on',
+                    },
+                    on: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: ',',
+                    },
+                    quote: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: '"',
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'column2',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'column3',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8287840,
+                hash: 'd7951727fadee4c1839a09b6529b8adbaad53381',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: null,
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      Date: {
+                        type: [
+                          'Datetime',
+                          'yy-mm-dd',
+                          'yyyy*mm*dd',
+                        ],
+                        _likely_types: [
+                          [
+                            'Datetime',
+                            'yy-mm-dd',
+                            'yyyy*mm*dd',
+                          ],
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                        ],
+                      },
+                      Close: {
+                        type: [
+                          'Float',
+                        ],
+                        _likely_types: [
+                          [
+                            'Float',
+                          ],
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'Header',
+                  parameters: {
+                    sanitize: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: false,
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'Date',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'Close',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: {
+                  column2: 'Date',
+                  column3: 'Close',
+                },
+                portId: null,
+                id: 8287841,
+                hash: '9eb2124ea5704230b4187eb4b6669be85e4fe2a4',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+            ],
+            dqScriptRules: [],
+          },
+          {
+            id: 1667999,
+            name: 'Untitled recipe',
+            description: null,
+            active: true,
+            nextPortId: 1,
+            steps: [
+              {
+                columnMetadata: {
+                  ticker: {
+                    id: '2sp5k43',
+                  },
+                },
+                task: {
+                  annotations: {
+                    hidden: true,
+                  },
+                  kind: 'task',
+                  type: 'Load',
+                  parameters: {
+                    format: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'FormatBlob',
+                      parameters: {},
+                    },
+                    location: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'portId://null',
+                    },
+                    enableLineage: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: true,
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'column1',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: 'original_datasource_1784206',
+                },
+                tableData: null,
+                portId: null,
+                id: 8411310,
+                hash: 'f01996429f112b9eaf8f4a19aa9d5927adf8a27b',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+            ],
+            dqScriptRules: [],
+          },
+        ],
+        outputobjects: [
+          {
+            id: 207869,
+            execution: 'emrSpark',
+            profiler: true,
+            flowNodeId: 1784209,
+            isAdhoc: false,
+            ignoreRecipeErrors: false,
+            name: null,
+            description: null,
+            publications: [],
+            writesettings: [],
+            sqlscripts: [],
+            outputobjectdataflowoptions: [],
+            outputobjectsparkoptions: [
+              {
+                id: 114279,
+                key: 'spark.sql.codegen.maxFields',
+                value: '100',
+              },
+              {
+                id: 114278,
+                key: 'spark.sql.codegen.wholeStage',
+                value: 'true',
+              },
+              {
+                id: 114277,
+                key: 'transformer.dataframe.checkpoint.threshold',
+                value: '200',
+              },
+            ],
+            outputobjectschemadriftoptions: [
+              {
+                id: 249099,
+                key: 'schemaValidation',
+                value: 'true',
+              },
+              {
+                id: 249100,
+                key: 'stopJobOnErrorsFound',
+                value: 'false',
+              },
+            ],
+          },
+          {
+            id: 207868,
+            execution: 'photon',
+            profiler: true,
+            flowNodeId: 1784209,
+            isAdhoc: true,
+            ignoreRecipeErrors: false,
+            name: null,
+            description: null,
+            publications: [],
+            writesettings: [
+              {
+                delim: ',',
+                id: 2421543,
+                path: 'tfs://umn-angw/54205/correlation.csv',
+                action: 'overwrite',
+                format: 'csv',
+                compression: 'none',
+                header: true,
+                asSingleFile: true,
+                prefix: null,
+                suffix: '_increment',
+                hasQuotes: true,
+                includeMismatches: true,
+                connectionId: null,
+                runParameters: [],
+              },
+            ],
+            sqlscripts: [],
+            outputobjectdataflowoptions: [],
+            outputobjectsparkoptions: [],
+            outputobjectschemadriftoptions: [
+              {
+                id: 249101,
+                key: 'schemaValidation',
+                value: 'true',
+              },
+              {
+                id: 249102,
+                key: 'stopJobOnErrorsFound',
+                value: 'false',
+              },
+            ],
+          },
+        ],
+        datasources: [
+          {
+            path: '/templates/C05/AAPL.csv',
+            bucket: 'trifacta-public-datasets',
+            userinfo: null,
+            type: 's3',
+            host: null,
+            hasDynamicBucket: false,
+            hasDynamicUserInfo: false,
+            hasDynamicHost: false,
+            isDynamicOrConverted: true,
+            id: 1024373,
+            dynamicPath: '/templates/C05/.csv',
+            dynamicBucket: null,
+            dynamicHost: null,
+            dynamicUserInfo: null,
+            connectionId: null,
+            isSchematized: true,
+            isDynamic: true,
+            isConverted: false,
+            disableTypeInference: false,
+            hasStructuring: true,
+            hasSchemaErrors: false,
+            parsingScriptId: 1639385,
+            storageLocation: {
+              fullUri: 's3://trifacta-public-datasets/templates/C05/AAPL.csv',
+              id: 9275963,
+              path: '/templates/C05/AAPL.csv',
+              size: 13772,
+              type: 's3',
+              bucket: 'trifacta-public-datasets',
+              blobHost: null,
+              container: null,
+              hash: '4142e2fde826c15a9700072053dd39f732b27355',
+              host: null,
+              userinfo: null,
+            },
+            runParameters: [
+              {
+                id: 363305,
+                type: 'path',
+                runParameterEdit: {
+                  insertionIndices: [
+                    {
+                      index: 15,
+                      order: 0,
+                    },
+                  ],
+                  value: {
+                    pattern: {
+                      wildcard: {},
+                      recursive: false,
+                    },
+                  },
+                  id: 360482,
+                  overrideKey: null,
+                  description: null,
+                  isEnvironmentParameter: false,
+                },
+              },
+            ],
+          },
+        ],
+        webhookflowtasks: [],
+      },
+    ],
+    udfscriptartifacts: [],
+  },
+  hash: 'Fl+klLZRhsrfuDH29fciDevcZW+DB8aP',
+}

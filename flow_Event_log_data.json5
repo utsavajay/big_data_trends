@@ -1,0 +1,2924 @@
+{
+  type: 'flow',
+  kind: 'artifact',
+  metadata: {
+    trifactaVersion: '9.6.0+1918341.20221107112344.44304b13',
+    exportedAt: '2022-12-06T19:03:53.601Z',
+    exportedBy: 54205,
+    uuid: 'ba18a710-7598-11ed-8412-c56ce44a4c8e',
+    comment: '',
+    primaryFlowIds: [
+      205629,
+    ],
+    edition: 'SaaS',
+    lastMigration: '20220721085341',
+  },
+  data: {
+    artifacts: [],
+    connections: [],
+    flows: [
+      {
+        settings: {
+          optimize: 'default',
+        },
+        id: 205629,
+        name: 'Event log data',
+        description: '',
+        defaultOutputDir: null,
+        fromExampleFlowHash: 'FheLdPpygmeGR0DyIS7Wd03hvj5vm62l',
+        fromExampleFlowName: 'Example Flow - Event log data',
+        fromTemplateId: null,
+        flownodes: [
+          {
+            id: 1772261,
+            scriptId: 1628747,
+            flowNodeId: null,
+            wrangled: true,
+            referenceId: null,
+            sampleLoadLimit: null,
+          },
+          {
+            id: 1772262,
+            scriptId: 1628748,
+            flowNodeId: null,
+            wrangled: true,
+            referenceId: null,
+            sampleLoadLimit: null,
+          },
+          {
+            id: 1772263,
+            scriptId: 1628749,
+            flowNodeId: null,
+            wrangled: true,
+            referenceId: null,
+            sampleLoadLimit: null,
+          },
+          {
+            id: 1772264,
+            scriptId: 1628750,
+            flowNodeId: null,
+            wrangled: true,
+            referenceId: null,
+            sampleLoadLimit: null,
+          },
+          {
+            id: 1772265,
+            scriptId: 1628751,
+            flowNodeId: null,
+            wrangled: false,
+            referenceId: null,
+            sampleLoadLimit: null,
+          },
+          {
+            id: 1776021,
+            scriptId: 1632027,
+            flowNodeId: null,
+            wrangled: true,
+            referenceId: null,
+            sampleLoadLimit: null,
+          },
+        ],
+        notes: [
+          {
+            id: 320823,
+            content: 'Since%20the%20data%20contains%20JSON%20objects%3Cbr%3Ethe%20first%20step%20is%20flattening%20the%20objects%3Cbr%3Eand%20separate%20properties%20into%20new%20columns',
+            flowGraphVertexId: 1452918,
+          },
+          {
+            id: 320824,
+            content: 'Now%20that%20we%20have%20all%20the%20columns%2C%3Cbr%3Ewe%20can%20be%20sure%20to%20keep%20the%20ones%3Cbr%3Ewe%20need%20and%20rename%20and%20order%20them',
+            flowGraphVertexId: 1452919,
+          },
+          {
+            id: 320825,
+            content: 'We%20want%20to%20filter%20only%20events%20with%3Cbr%3Evalid%20%3Cb%3Euser_id%20%3C%2Fb%3E(not%20null)%26nbsp%3Band%20from%3Cbr%3EEnglish%20speaking%20users',
+            flowGraphVertexId: 1452920,
+          },
+          {
+            id: 320826,
+            content: 'We%20want%20to%20have%20an%20aggregate%20view%3Cbr%3Eof%20the%20events%20for%20each%20user%3Cbr%3Eby%20grouping%20and%20counting%20them',
+            flowGraphVertexId: 1452921,
+          },
+          {
+            id: 320827,
+            content: 'You%20can%20preview%20the%20data%20%3Cbr%3Eby%20double%20clicking%20on%20the%20dataset!%26nbsp%3B%F0%9F%98%89',
+            flowGraphVertexId: 1452922,
+          },
+          {
+            id: 320828,
+            content: 'Use%20a%20dataset%20to%20load%3Cbr%3Esocial%20media%20data%20from%3Cbr%3E%3Cb%3EAWS%20S3%3C%2Fb%3E',
+            flowGraphVertexId: 1452923,
+          },
+          {
+            id: 320829,
+            content: 'Double%20click%20on%20the%20Recipe%20above%3Cbr%3Eto%20see%20and%20transform%20the%20data',
+            flowGraphVertexId: 1452924,
+          },
+          {
+            id: 320830,
+            content: '%E2%98%9D%EF%B8%8F%26nbsp%3B%3Cb%3EAdd%20an%20output%20and%20run%3C%2Fb%3E%26nbsp%3B%3Cdiv%3Eto%20download%20and%20see%20the%20results!%20%F0%9F%93%88%3C%2Fdiv%3E',
+            flowGraphVertexId: 1452925,
+          },
+        ],
+        flowgraphvertices: [
+          {
+            id: 1452913,
+            objectType: 'flownode',
+            objectId: 1772261,
+            x: 121,
+            y: 45,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1452914,
+            objectType: 'flownode',
+            objectId: 1772262,
+            x: 401,
+            y: 42,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1452915,
+            objectType: 'flownode',
+            objectId: 1772263,
+            x: 654,
+            y: 43,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1452916,
+            objectType: 'flownode',
+            objectId: 1772264,
+            x: 964,
+            y: 44,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1452917,
+            objectType: 'flownode',
+            objectId: 1772265,
+            x: -155,
+            y: 45,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1456778,
+            objectType: 'flownode',
+            objectId: 1776021,
+            x: 125,
+            y: 383,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1452942,
+            objectType: 'outputobject',
+            objectId: 206658,
+            x: 1204,
+            y: 44,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1452918,
+            objectType: 'note',
+            objectId: 320823,
+            x: 61,
+            y: 178,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1452919,
+            objectType: 'note',
+            objectId: 320824,
+            x: 341,
+            y: 140,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1452920,
+            objectType: 'note',
+            objectId: 320825,
+            x: 607,
+            y: 136,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1452921,
+            objectType: 'note',
+            objectId: 320826,
+            x: 900,
+            y: 133,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1452922,
+            objectType: 'note',
+            objectId: 320827,
+            x: -176,
+            y: 222,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1452923,
+            objectType: 'note',
+            objectId: 320828,
+            x: -172,
+            y: 147,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1452924,
+            objectType: 'note',
+            objectId: 320829,
+            x: 63,
+            y: 136,
+            width: null,
+            height: null,
+          },
+          {
+            id: 1452925,
+            objectType: 'note',
+            objectId: 320830,
+            x: 903,
+            y: 214,
+            width: null,
+            height: null,
+          },
+        ],
+        flowedges: [
+          {
+            id: 1520715,
+            inFlowNodeId: 1772261,
+            inPortId: null,
+            outFlowNodeId: 1772262,
+            outPortId: null,
+          },
+          {
+            id: 1520716,
+            inFlowNodeId: 1772262,
+            inPortId: null,
+            outFlowNodeId: 1772263,
+            outPortId: null,
+          },
+          {
+            id: 1520717,
+            inFlowNodeId: 1772263,
+            inPortId: null,
+            outFlowNodeId: 1772264,
+            outPortId: null,
+          },
+          {
+            id: 1520718,
+            inFlowNodeId: 1772265,
+            inPortId: null,
+            outFlowNodeId: 1772261,
+            outPortId: null,
+          },
+          {
+            id: 1523984,
+            inFlowNodeId: 1772261,
+            inPortId: null,
+            outFlowNodeId: 1776021,
+            outPortId: null,
+          },
+        ],
+        references: [],
+        flowrunparameteroverrides: [],
+        runparameters: [],
+        recipes: [
+          {
+            id: 1628747,
+            name: 'Flat JSON columns',
+            description: 'Expanding JSON objects',
+            active: true,
+            nextPortId: 1,
+            steps: [
+              {
+                columnMetadata: {
+                  event_category: {
+                    id: '15f6cpl',
+                  },
+                  event_properties: {
+                    id: '-ns2biw',
+                  },
+                  user_session_id: {
+                    id: '-3n1rwig',
+                  },
+                  created_at: {
+                    id: '-2768nx6',
+                  },
+                  user_properties: {
+                    id: '-363661n',
+                  },
+                  TRIFACTA__FILE_LINEAGE_INFO: {
+                    id: 'ckmnk5',
+                  },
+                },
+                task: {
+                  annotations: {
+                    hidden: true,
+                  },
+                  kind: 'task',
+                  type: 'Load',
+                  parameters: {
+                    format: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'FormatBlob',
+                      parameters: {},
+                    },
+                    location: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'portId://null',
+                    },
+                    enableLineage: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: true,
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'column1',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: 'original_datasource_850503',
+                },
+                tableData: null,
+                portId: null,
+                id: 8244444,
+                hash: '7cb970fb42433efd9dd7e6774dc949bdcca9b275',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {
+                  'contacts in common1': {
+                    id: '4fvz9xk',
+                  },
+                  'followed user1': {
+                    id: '4okfd2c',
+                  },
+                  blocked_user1: {
+                    id: '6q553az',
+                  },
+                  'closeness percent1': {
+                    id: '3z5il61',
+                  },
+                  'unfollowed user1': {
+                    id: '4jd6zl3',
+                  },
+                  context1: {
+                    id: '52uzhqm',
+                  },
+                  message1: {
+                    id: '3mswasu',
+                  },
+                  reaction1: {
+                    id: '4wyhozi',
+                  },
+                },
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      'contacts in common1': {
+                        type: [
+                          'Integer',
+                        ],
+                        _likely_types: [
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Float',
+                          ],
+                          [
+                            'String',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                        ],
+                      },
+                      'followed user1': {
+                        type: [
+                          'Integer',
+                        ],
+                        _likely_types: [
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Float',
+                          ],
+                          [
+                            'String',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                      blocked_user1: {
+                        type: [
+                          'Integer',
+                        ],
+                        _likely_types: [
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Float',
+                          ],
+                          [
+                            'String',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                        ],
+                      },
+                      'closeness percent1': {
+                        type: [
+                          'Integer',
+                        ],
+                        _likely_types: [
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Float',
+                          ],
+                          [
+                            'String',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                        ],
+                      },
+                      'unfollowed user1': {
+                        type: [
+                          'Integer',
+                        ],
+                        _likely_types: [
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Float',
+                          ],
+                          [
+                            'String',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                      context1: {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                      message1: {
+                        type: [
+                          'Integer',
+                        ],
+                        _likely_types: [
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Float',
+                          ],
+                          [
+                            'String',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                        ],
+                      },
+                      reaction1: {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'Unnest',
+                  parameters: {
+                    pluck: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: false,
+                    },
+                    markLineage: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: false,
+                    },
+                    col: {
+                      kind: 'column',
+                      type: 'Column',
+                      value: 'event_properties',
+                      relation: null,
+                    },
+                    keys: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: '["contacts in common"]',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: '["followed user"]',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'blocked_user',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: '["closeness percent"]',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: '["unfollowed user"]',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'context',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'message',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'reaction',
+                        },
+                      ],
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'contacts in common1',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'followed user1',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'blocked_user1',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'closeness percent1',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'unfollowed user1',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'context1',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'message1',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'reaction1',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8244445,
+                hash: 'adc30718d22a4103fb63642e52a48df084b9c8fd',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {
+                  'user email': {
+                    id: '-3yud3od',
+                  },
+                  'user language': {
+                    id: '-4wfie2p',
+                  },
+                },
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      'user email': {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                      'user language': {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'Unnest',
+                  parameters: {
+                    pluck: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: false,
+                    },
+                    markLineage: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: false,
+                    },
+                    col: {
+                      kind: 'column',
+                      type: 'Column',
+                      value: 'user_properties',
+                      relation: null,
+                    },
+                    keys: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: '["user email"]',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: '["user language"]',
+                        },
+                      ],
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'user email',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'user language',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8244446,
+                hash: '6033de291ff678c137263af3eebd973c8b6755dd',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Drop',
+                  parameters: {
+                    action: {
+                      kind: 'enumerable',
+                      type: 'Enumerable',
+                      value: 'Drop',
+                    },
+                    col: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'event_properties',
+                          relation: null,
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8244447,
+                hash: '634fb754b117b6f221ed62396dba5c095f610054',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Drop',
+                  parameters: {
+                    action: {
+                      kind: 'enumerable',
+                      type: 'Enumerable',
+                      value: 'Drop',
+                    },
+                    col: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'user_properties',
+                          relation: null,
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8244448,
+                hash: '8b642452b5a4845ce14a792b794b17d4fe678425',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {
+                  user_session_id1: {
+                    id: '5f711g7',
+                  },
+                  user_session_id2: {
+                    id: '5f711g8',
+                  },
+                },
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      user_session_id1: {
+                        type: [
+                          'Integer',
+                        ],
+                        _likely_types: [
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Float',
+                          ],
+                          [
+                            'String',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                        ],
+                      },
+                      user_session_id2: {
+                        type: [
+                          'Integer',
+                        ],
+                        _likely_types: [
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Float',
+                          ],
+                          [
+                            'String',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'SplitPatterns',
+                  parameters: {
+                    col: {
+                      kind: 'column',
+                      type: 'Column',
+                      value: 'user_session_id',
+                      relation: null,
+                    },
+                    on: {
+                      kind: 'constant',
+                      type: 'Pattern',
+                      value: '{delim}',
+                    },
+                    type: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'on',
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'user_session_id1',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'user_session_id2',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8244449,
+                hash: 'a72f10e026267a6daae4bd1e205e57ae84f8a4c6',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+            ],
+            dqScriptRules: [],
+          },
+          {
+            id: 1628748,
+            name: 'Rename and delete columns',
+            description: null,
+            active: true,
+            nextPortId: 1,
+            steps: [
+              {
+                columnMetadata: {
+                  event_category: {
+                    id: '-38vooqv',
+                  },
+                  'contacts in common1': {
+                    id: '-3hlg186',
+                  },
+                  'followed user1': {
+                    id: '-wm334q',
+                  },
+                  blocked_user1: {
+                    id: '-4zdk9tv',
+                  },
+                  'closeness percent1': {
+                    id: '-28qqw2d',
+                  },
+                  'unfollowed user1': {
+                    id: '-5drtxz',
+                  },
+                  context1: {
+                    id: '-1dwd7jk',
+                  },
+                  message1: {
+                    id: '-uxcci8',
+                  },
+                  reaction1: {
+                    id: 'p5sc1s',
+                  },
+                  user_session_id1: {
+                    id: '-1pcfepz',
+                  },
+                  user_session_id2: {
+                    id: '-1pcfepy',
+                  },
+                  created_at: {
+                    id: '-31m5ire',
+                  },
+                  'user email': {
+                    id: '-wi21hb',
+                  },
+                  'user language': {
+                    id: '-1e1mahv',
+                  },
+                  TRIFACTA__FILE_LINEAGE_INFO: {
+                    id: '-1xs93kr',
+                  },
+                },
+                task: {
+                  annotations: {
+                    hidden: true,
+                  },
+                  kind: 'task',
+                  type: 'Load',
+                  parameters: {
+                    format: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'FormatBlob',
+                      parameters: {},
+                    },
+                    location: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'portId://null',
+                    },
+                    enableLineage: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: true,
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'column1',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: 'original_datasource_1886626',
+                },
+                tableData: null,
+                portId: null,
+                id: 8244450,
+                hash: '2fc4df866df6c6d62b7e5971cb7b718024e4e967',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Rename',
+                  parameters: {
+                    type: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'manual',
+                    },
+                    mapping: {
+                      kind: 'matrix',
+                      type: 'Matrix',
+                      value: [
+                        {
+                          kind: 'array',
+                          type: 'Array',
+                          value: [
+                            {
+                              kind: 'column',
+                              type: 'Column',
+                              value: 'user_session_id1',
+                              relation: null,
+                            },
+                            {
+                              kind: 'constant',
+                              type: 'String',
+                              value: 'user_session',
+                            },
+                          ],
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8244451,
+                hash: 'c6a2105c87122651d08077e7d363efe819149825',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Rename',
+                  parameters: {
+                    type: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'manual',
+                    },
+                    mapping: {
+                      kind: 'matrix',
+                      type: 'Matrix',
+                      value: [
+                        {
+                          kind: 'array',
+                          type: 'Array',
+                          value: [
+                            {
+                              kind: 'column',
+                              type: 'Column',
+                              value: 'user_session_id2',
+                              relation: null,
+                            },
+                            {
+                              kind: 'constant',
+                              type: 'String',
+                              value: 'user_id',
+                            },
+                          ],
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8244452,
+                hash: 'a3f0bf627661bcbe38c3341ebab2733d36a86dd0',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Move',
+                  parameters: {
+                    col: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'user_id',
+                          relation: null,
+                        },
+                      ],
+                    },
+                    position: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'before',
+                    },
+                    before: {
+                      kind: 'column',
+                      type: 'Column',
+                      value: 'event_category',
+                      relation: null,
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8244453,
+                hash: 'dd8d8e3b0d49b4b8e2f0ba52a344bf492fde58c3',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Move',
+                  parameters: {
+                    col: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'user_session',
+                          relation: null,
+                        },
+                      ],
+                    },
+                    position: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'after',
+                    },
+                    after: {
+                      kind: 'column',
+                      type: 'Column',
+                      value: 'user_id',
+                      relation: null,
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8244454,
+                hash: 'a6996b5935685e5c4ca9fdc64c99f1bcf7acd4c3',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {},
+                  },
+                  kind: 'task',
+                  type: 'Move',
+                  parameters: {
+                    col: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'user email',
+                          relation: null,
+                        },
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'user language',
+                          relation: null,
+                        },
+                      ],
+                    },
+                    position: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'after',
+                    },
+                    after: {
+                      kind: 'column',
+                      type: 'Column',
+                      value: 'user_id',
+                      relation: null,
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8244455,
+                hash: 'b63ae2e102ebc44fe541374df37751718d043f3d',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      event_category: {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'ReplacePatterns',
+                  parameters: {
+                    with: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: '',
+                    },
+                    col: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'event_category',
+                          relation: null,
+                        },
+                      ],
+                    },
+                    global: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: true,
+                    },
+                    on: {
+                      kind: 'constant',
+                      type: 'Pattern',
+                      value: '"',
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'event_category',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8244456,
+                hash: '5bcf8d2ba3cbb7547c4e7bc94c0f55234a0f436e',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Drop',
+                  parameters: {
+                    action: {
+                      kind: 'enumerable',
+                      type: 'Enumerable',
+                      value: 'Drop',
+                    },
+                    col: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'user email',
+                          relation: null,
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8244457,
+                hash: '25fe629b11fb9b066a4911ce92fcd958c8f16fe5',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {
+                  '1': {
+                    id: '9huchdp',
+                  },
+                },
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      '1': {
+                        type: [
+                          'Integer',
+                        ],
+                        _likely_types: [
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Float',
+                          ],
+                          [
+                            'String',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'Derive',
+                  parameters: {
+                    type: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'single',
+                    },
+                    value: {
+                      kind: 'constant',
+                      type: 'Integer',
+                      value: 1,
+                    },
+                    as: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: '1',
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8244638,
+                hash: '2548e336ed263c6f5d54d4e39ddf0e1538aeb1cf',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+            ],
+            dqScriptRules: [],
+          },
+          {
+            id: 1628749,
+            name: 'Filtering rows',
+            description: null,
+            active: true,
+            nextPortId: 1,
+            steps: [
+              {
+                columnMetadata: {
+                  '1': {
+                    id: '13afb3h',
+                  },
+                  user_id: {
+                    id: '1bgxa3r',
+                  },
+                  'user language': {
+                    id: '289sghr',
+                  },
+                  user_session: {
+                    id: '2pycxy6',
+                  },
+                  event_category: {
+                    id: '-78t6n9',
+                  },
+                  'contacts in common1': {
+                    id: '34x6rfw',
+                  },
+                  'followed user1': {
+                    id: '5zoczs',
+                  },
+                  blocked_user1: {
+                    id: '-1d25iu9',
+                  },
+                  'closeness percent1': {
+                    id: '-d8vhir',
+                  },
+                  'unfollowed user1': {
+                    id: '-fd5j79',
+                  },
+                  context1: {
+                    id: 'mvcx9u',
+                  },
+                  message1: {
+                    id: '15udsb6',
+                  },
+                  reaction1: {
+                    id: '2ak0xsy',
+                  },
+                  created_at: {
+                    id: '8nx1rc',
+                  },
+                  TRIFACTA__FILE_LINEAGE_INFO: {
+                    id: '-wkasop',
+                  },
+                },
+                task: {
+                  annotations: {
+                    hidden: true,
+                  },
+                  kind: 'task',
+                  type: 'Load',
+                  parameters: {
+                    format: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'FormatBlob',
+                      parameters: {},
+                    },
+                    location: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'portId://null',
+                    },
+                    enableLineage: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: true,
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'column1',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: 'original_datasource_1889463',
+                },
+                tableData: null,
+                portId: null,
+                id: 8244458,
+                hash: '3b76ea3f914588b69f44a5708d794e0c91adcca7',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {
+                  TRIFACTA__LINEAGE_INFO: {
+                    id: '-35u9dbz',
+                  },
+                },
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Filter',
+                  parameters: {
+                    action: {
+                      kind: 'enumerable',
+                      type: 'Enumerable',
+                      value: 'Delete',
+                    },
+                    row: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'IsMissing',
+                      parameters: {
+                        col: {
+                          kind: 'array',
+                          type: 'Array',
+                          value: [
+                            {
+                              kind: 'column',
+                              type: 'Column',
+                              value: 'user_id',
+                              relation: null,
+                            },
+                          ],
+                        },
+                      },
+                    },
+                    type: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'custom',
+                    },
+                    rowType: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'single',
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8244459,
+                hash: 'e2360bf08edae1054edfcf5c42e36f18b2498f36',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {},
+                task: {
+                  annotations: {},
+                  kind: 'task',
+                  type: 'Filter',
+                  parameters: {
+                    type: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'oneOf',
+                    },
+                    col: {
+                      kind: 'column',
+                      type: 'Column',
+                      value: 'user language',
+                      relation: null,
+                    },
+                    oneOf: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'en',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'en-US',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'en-GB',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'gb',
+                        },
+                      ],
+                    },
+                    action: {
+                      kind: 'enumerable',
+                      type: 'Enumerable',
+                      value: 'Keep',
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8244654,
+                hash: '70e1993d1fb1c6b05187875d3cf80747ef997965',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+            ],
+            dqScriptRules: [],
+          },
+          {
+            id: 1628750,
+            name: 'Grouping and counting',
+            description: null,
+            active: true,
+            nextPortId: 1,
+            steps: [
+              {
+                columnMetadata: {
+                  user_id: {
+                    id: '6becm9z',
+                  },
+                  'user language': {
+                    id: '6fr39wf',
+                  },
+                  user_session: {
+                    id: '6fown5q',
+                  },
+                  event_category: {
+                    id: '6gjk3gb',
+                  },
+                  'contacts in common': {
+                    id: '2zq02ez',
+                  },
+                  'followed user': {
+                    id: '53y5rfb',
+                  },
+                  blocked_user: {
+                    id: '49rwrf2',
+                  },
+                  'closeness percent': {
+                    id: '77cvdj0',
+                  },
+                  'unfollowed user': {
+                    id: '48y87sq',
+                  },
+                  context: {
+                    id: '5fosl8h',
+                  },
+                  message: {
+                    id: '59t0z35',
+                  },
+                  reaction: {
+                    id: '75o3z8x',
+                  },
+                  created_at: {
+                    id: '6au4uq0',
+                  },
+                  TRIFACTA__FILE_LINEAGE_INFO: {
+                    id: '4lj5fhj',
+                  },
+                },
+                task: {
+                  annotations: {
+                    hidden: true,
+                  },
+                  kind: 'task',
+                  type: 'Load',
+                  parameters: {
+                    format: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'FormatBlob',
+                      parameters: {},
+                    },
+                    location: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'portId://null',
+                    },
+                    enableLineage: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: true,
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'column1',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: 'original_datasource_1889490',
+                },
+                tableData: null,
+                portId: null,
+                id: 8244461,
+                hash: '2ac715b71838a6a841b4055abd2913111bed632d',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: {
+                  row_count: {
+                    id: '-3ag3qi6',
+                  },
+                },
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      row_count: {
+                        type: [
+                          'Integer',
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'GroupBy',
+                  parameters: {
+                    type: {
+                      kind: 'enumerable',
+                      type: 'Enumerable',
+                      value: 'agg',
+                    },
+                    group: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'user_id',
+                          relation: null,
+                        },
+                        {
+                          kind: 'column',
+                          type: 'Column',
+                          value: 'event_category',
+                          relation: null,
+                        },
+                      ],
+                    },
+                    value: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          annotations: {},
+                          kind: 'func',
+                          type: 'Count',
+                          parameters: {},
+                          as: [
+                            'row_count',
+                          ],
+                        },
+                      ],
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'row_count',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8244462,
+                hash: '3d10324648f307822c83f34a45ba2d7c76d0a7f8',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+            ],
+            dqScriptRules: [],
+          },
+          {
+            id: 1628751,
+            name: 'USEREVENTS.csv',
+            description: null,
+            active: true,
+            nextPortId: 1,
+            steps: [
+              {
+                columnMetadata: null,
+                task: {
+                  annotations: {
+                    hidden: true,
+                  },
+                  kind: 'task',
+                  type: 'Load',
+                  parameters: {
+                    format: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'FormatBlob',
+                      parameters: {},
+                    },
+                    location: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'id://1017381',
+                    },
+                    enableLineage: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: true,
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'column1',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: 'original_datasource_269938',
+                },
+                tableData: null,
+                portId: null,
+                id: 8244463,
+                hash: '6efb51691573eedc331378c1e2ba8a21f284be25',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: null,
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      column1: {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'SplitRows',
+                  parameters: {
+                    on: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: '\n',
+                    },
+                    col: {
+                      kind: 'column',
+                      type: 'Column',
+                      value: 'column1',
+                      relation: null,
+                    },
+                    quote: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: '"',
+                    },
+                    quoteEscapeChar: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: '"',
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8244464,
+                hash: '5e0dbcfc803cc40c01c0298ba18470aabb16ab81',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: null,
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      column2: {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                      column3: {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                      column4: {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                      column5: {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                      column6: {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'Split',
+                  parameters: {
+                    col: {
+                      kind: 'column',
+                      type: 'Column',
+                      value: 'column1',
+                      relation: null,
+                    },
+                    type: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'on',
+                    },
+                    on: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: ',',
+                    },
+                    limit: {
+                      kind: 'constant',
+                      type: 'Integer',
+                      value: 4,
+                    },
+                    quote: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: '"',
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'column2',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'column3',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'column4',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'column5',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'column6',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8244465,
+                hash: '8a350ec9e08c0ad5e44f375ec40c4f0dd6785e92',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: null,
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      column2: {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                      column3: {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                      column4: {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                      column5: {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                      column6: {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'Replace',
+                  parameters: {
+                    with: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: '"',
+                    },
+                    col: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Wildcard',
+                          value: '*',
+                          annotations: {
+                            includeLineage: false,
+                            includeFileLineage: false,
+                          },
+                          relation: null,
+                        },
+                      ],
+                    },
+                    type: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'on',
+                    },
+                    on: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: '""',
+                    },
+                    global: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: true,
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8244466,
+                hash: 'e206ce648904e9703aeafcfc9fced2dce7ed9393',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: null,
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      column2: {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                      column3: {
+                        type: [
+                          'Map',
+                        ],
+                        _likely_types: [
+                          [
+                            'Map',
+                          ],
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                        ],
+                      },
+                      column4: {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                      column5: {
+                        type: [
+                          'Datetime',
+                          'yy-dd-mm hh:mm:ss',
+                          'yyyy*dd*mm*HH:MM:SS.sssX',
+                        ],
+                        _likely_types: [
+                          [
+                            'Datetime',
+                            'yy-dd-mm hh:mm:ss',
+                            'yyyy*dd*mm*HH:MM:SS.sssX',
+                          ],
+                          [
+                            'Datetime',
+                            'yy-mm-dd hh:mm:ss',
+                            'yyyy*mm*dd*HH:MM:SS.sssX',
+                          ],
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                        ],
+                      },
+                      column6: {
+                        type: [
+                          'Map',
+                        ],
+                        _likely_types: [
+                          [
+                            'Map',
+                          ],
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'Replace',
+                  parameters: {
+                    with: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: '',
+                    },
+                    col: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'column',
+                          type: 'Wildcard',
+                          value: '*',
+                          annotations: {
+                            includeLineage: false,
+                            includeFileLineage: false,
+                          },
+                          relation: null,
+                        },
+                      ],
+                    },
+                    type: {
+                      kind: 'bundle',
+                      type: 'Bundle',
+                      value: 'on',
+                    },
+                    on: {
+                      kind: 'constant',
+                      type: 'Pattern',
+                      value: '{start}"|"{end}',
+                    },
+                    global: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: true,
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: null,
+                portId: null,
+                id: 8244467,
+                hash: '95b1b0c2b09580544ed1cc55e3856737a1a02b9f',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+              {
+                columnMetadata: null,
+                task: {
+                  annotations: {
+                    outputColumnAnnotations: {
+                      event_category: {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                      event_properties: {
+                        type: [
+                          'Map',
+                        ],
+                        _likely_types: [
+                          [
+                            'Map',
+                          ],
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                        ],
+                      },
+                      user_session_id: {
+                        type: [
+                          'String',
+                        ],
+                        _likely_types: [
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                          [
+                            'Map',
+                          ],
+                        ],
+                      },
+                      created_at: {
+                        type: [
+                          'Datetime',
+                          'yy-dd-mm hh:mm:ss',
+                          'yyyy*dd*mm*HH:MM:SS.sssX',
+                        ],
+                        _likely_types: [
+                          [
+                            'Datetime',
+                            'yy-dd-mm hh:mm:ss',
+                            'yyyy*dd*mm*HH:MM:SS.sssX',
+                          ],
+                          [
+                            'Datetime',
+                            'yy-mm-dd hh:mm:ss',
+                            'yyyy*mm*dd*HH:MM:SS.sssX',
+                          ],
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                        ],
+                      },
+                      user_properties: {
+                        type: [
+                          'Map',
+                        ],
+                        _likely_types: [
+                          [
+                            'Map',
+                          ],
+                          [
+                            'String',
+                          ],
+                          [
+                            'Integer',
+                          ],
+                          [
+                            'Phone',
+                          ],
+                          [
+                            'SSN',
+                          ],
+                        ],
+                      },
+                    },
+                  },
+                  kind: 'task',
+                  type: 'Header',
+                  parameters: {
+                    sanitize: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: false,
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'event_category',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'event_properties',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'user_session_id',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'created_at',
+                        },
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'user_properties',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: null,
+                },
+                tableData: {
+                  column2: 'event_category',
+                  column3: 'event_properties',
+                  column4: 'user_session_id',
+                  column5: 'created_at',
+                  column6: 'user_properties',
+                },
+                portId: null,
+                id: 8244468,
+                hash: '025f6c27d48958b5e941db8bf72e62632c00f1b8',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+            ],
+            dqScriptRules: [],
+          },
+          {
+            id: 1632027,
+            name: 'Untitled recipe',
+            description: null,
+            active: true,
+            nextPortId: 1,
+            steps: [
+              {
+                columnMetadata: null,
+                task: {
+                  annotations: {
+                    hidden: true,
+                  },
+                  kind: 'task',
+                  type: 'Load',
+                  parameters: {
+                    format: {
+                      annotations: {},
+                      kind: 'func',
+                      type: 'FormatBlob',
+                      parameters: {},
+                    },
+                    location: {
+                      kind: 'constant',
+                      type: 'String',
+                      value: 'portId://null',
+                    },
+                    enableLineage: {
+                      kind: 'constant',
+                      type: 'Bool',
+                      value: true,
+                    },
+                    as: {
+                      kind: 'array',
+                      type: 'Array',
+                      value: [
+                        {
+                          kind: 'constant',
+                          type: 'String',
+                          value: 'column1',
+                        },
+                      ],
+                    },
+                  },
+                  outputName: 'original_datasource_1772261',
+                },
+                tableData: null,
+                portId: null,
+                id: 8259874,
+                hash: 'd96596ff0e9f94a7323b09f3b8686248eb692be1',
+                pbemappingartifacts: [],
+                targetmappingartifacts: [],
+                udfscriptlines: [],
+                dependencies: [],
+              },
+            ],
+            dqScriptRules: [],
+          },
+        ],
+        outputobjects: [
+          {
+            id: 206658,
+            execution: 'emrSpark',
+            profiler: true,
+            flowNodeId: 1772264,
+            isAdhoc: true,
+            ignoreRecipeErrors: false,
+            name: null,
+            description: null,
+            publications: [],
+            writesettings: [
+              {
+                delim: ',',
+                id: 2399122,
+                path: 'tfs://umn-angw/54205/Grouping and counting.csv',
+                action: 'create',
+                format: 'csv',
+                compression: 'none',
+                header: true,
+                asSingleFile: true,
+                prefix: null,
+                suffix: '_increment',
+                hasQuotes: true,
+                includeMismatches: true,
+                connectionId: null,
+                runParameters: [],
+              },
+            ],
+            sqlscripts: [],
+            outputobjectdataflowoptions: [],
+            outputobjectsparkoptions: [
+              {
+                id: 113871,
+                key: 'spark.sql.codegen.maxFields',
+                value: '100',
+              },
+              {
+                id: 113870,
+                key: 'spark.sql.codegen.wholeStage',
+                value: 'true',
+              },
+              {
+                id: 113869,
+                key: 'transformer.dataframe.checkpoint.threshold',
+                value: '200',
+              },
+            ],
+            outputobjectschemadriftoptions: [
+              {
+                id: 245741,
+                key: 'schemaValidation',
+                value: 'true',
+              },
+              {
+                id: 245742,
+                key: 'stopJobOnErrorsFound',
+                value: 'false',
+              },
+            ],
+          },
+        ],
+        datasources: [
+          {
+            path: '/templates/C02/USEREVENTS.csv',
+            bucket: 'trifacta-public-datasets',
+            userinfo: null,
+            type: 's3',
+            host: null,
+            hasDynamicBucket: false,
+            hasDynamicUserInfo: false,
+            hasDynamicHost: false,
+            isDynamicOrConverted: false,
+            id: 1017381,
+            dynamicPath: null,
+            dynamicBucket: null,
+            dynamicHost: null,
+            dynamicUserInfo: null,
+            connectionId: null,
+            isSchematized: true,
+            isDynamic: false,
+            isConverted: false,
+            disableTypeInference: false,
+            hasStructuring: true,
+            hasSchemaErrors: false,
+            parsingScriptId: 1628751,
+            storageLocation: {
+              fullUri: 's3://trifacta-public-datasets/templates/C02/USEREVENTS.csv',
+              id: 9170273,
+              path: '/templates/C02/USEREVENTS.csv',
+              size: 216821,
+              type: 's3',
+              bucket: 'trifacta-public-datasets',
+              blobHost: null,
+              container: null,
+              hash: 'a85ec2d497cb4f0bc3efe1e774e162ae5885a8dd',
+              host: null,
+              userinfo: null,
+            },
+            runParameters: [],
+          },
+        ],
+        webhookflowtasks: [],
+      },
+    ],
+    udfscriptartifacts: [],
+  },
+  hash: 'wk/SlN8eyecB3Unv9fRIU1A4/FaYZwDi',
+}
